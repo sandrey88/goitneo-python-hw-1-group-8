@@ -9,9 +9,11 @@ users = [
     {"name": "Elon Musk", "birthday": datetime(1971, 6, 28)},
     {"name": "Oprah Winfrey", "birthday": datetime(1954, 1, 29)},
     {"name": "Marie Curie", "birthday": datetime(1867, 11, 7)},
+    {"name": "Di Dan", "birthday": datetime(1964, 3, 8)},
     {"name": "Albert Einstein", "birthday": datetime(1879, 3, 14)},
     {"name": "Jane Austen", "birthday": datetime(1775, 12, 16)},
     {"name": "Malala Yo", "birthday": datetime(1947, 3, 4)},
+    {"name": "Doro Do", "birthday": datetime(1986, 3, 5)},
     {"name": "Frida Ka", "birthday": datetime(1999, 3, 8)},
 ]
 
@@ -41,8 +43,9 @@ def get_birthdays_per_week(users):
             # Зберігаємо ім'я користувача у відповідний день тижня.
             birthdays[day_of_week].append(name)
     
-    # Виводимо зібрані імена по днях тижня у відповідному форматі.
-    for birthday, name in birthdays.items():
-        print(f"{birthday}: {', '.join(name)}")
+    # Виводимо зібрані імена по днях тижня (з понеділка по п'ятницю) у відповідному форматі.
+    for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
+        if birthdays[day]:
+            print(f"{day}: {', '.join(birthdays[day])}")
 
 get_birthdays_per_week(users)
