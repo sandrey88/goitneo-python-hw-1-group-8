@@ -22,7 +22,7 @@ def get_birthdays_per_week(users):
     for user in users:
         name = user["name"]
 
-        # Аланіз дати народження:
+        # Аналіз дати народження:
         birthday = user["birthday"].date()
         birthday_this_year = birthday.replace(year=today.year)
 
