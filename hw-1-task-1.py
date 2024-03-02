@@ -9,7 +9,7 @@ users = [
     {"name": "Elon Musk", "birthday": datetime(1971, 6, 28)},
     {"name": "Oprah Winfrey", "birthday": datetime(1954, 1, 29)},
     {"name": "Marie Curie", "birthday": datetime(1867, 11, 7)},
-    {"name": "Di Dan", "birthday": datetime(1964, 3, 8)},
+    {"name": "Di Dan", "birthday": datetime(1964, 3, 3)},
     {"name": "Albert Einstein", "birthday": datetime(1879, 3, 14)},
     {"name": "Jane Austen", "birthday": datetime(1775, 12, 16)},
     {"name": "Malala Yo", "birthday": datetime(1947, 3, 4)},
